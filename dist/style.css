@@ -460,6 +460,7 @@ body {
 @media screen and (max-width: 36.3125rem) {
   .hero__tasks .delete-btn {
     padding: 0.4375rem;
+    opacity : 1;
   }
 }
 
