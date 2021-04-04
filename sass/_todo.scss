@@ -184,6 +184,7 @@
 
                 @include responsive(large) {
                     padding: rem(7);
+                    opacity : 1;
                 }
 
                 &:focus{
