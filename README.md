@@ -16,5 +16,4 @@ This app is *fully responsive* from screen width 1440px to 375px
 
 You may visit the site [here](https://roctanweer.github.io/todoApp/)
 
-![App preview](./design/desktop-design-dark.jpg)
-![App preview](./design/desktop-design-light.jpg)
+![App preview](./design/desktop-preview.jpg)
