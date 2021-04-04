@@ -1,0 +1,113 @@
+.light{
+        background-color: $veryLightGrayishBlue;  
+
+        .header{
+            background-image: url(../images/bg-desktop-light.jpg);
+
+            @include responsive(large) {
+                background-image: url(../images/bg-mobile-light.jpg);
+            }
+        }
+
+        .common-bg{
+            background-color: $veryLightGray;
+        }
+
+        .hero__heading__toggler {
+            background-image: url(../images/icon-moon.svg);
+        }
+
+        .hero__form__field{
+            color: $veryDarkBlue;
+            &::placeholder{
+                color: $darkGrayishBlue1;
+            }
+        }
+
+        #form-circle{
+            border-color: $lightGrayishBlue;
+        }
+
+        .task-name{
+            color: $veryDarkGrayishBlue;
+        }
+
+        [type = checkbox]:checked{
+            & + label{
+                .task-name{
+                    color: $lightGrayishBlue;
+                    &::before{
+                        background-color: $lightGrayishBlue;
+                    }
+                }
+            }
+        }
+
+        [type = checkbox]:focus {
+            & + label .custom-checkbox::before{
+                outline: 2px dashed $veryDarkDesaturatedBlue;
+            }
+        }
+
+        .delete-btn:focus{
+            outline: 2px dashed $veryDarkDesaturatedBlue;
+        }
+
+        .hero__heading__toggler:focus{
+            outline: 2px dashed $veryDarkDesaturatedBlue;
+        }
+
+        .filter-btn:focus{
+            outline: 2px dashed $veryDarkDesaturatedBlue;
+        }
+
+        .clear-completed:focus{
+            outline: 2px dashed $veryDarkDesaturatedBlue;
+        }
+
+        .custom-checkbox{
+            background-color: $lightGrayishBlue;
+
+            &__inner{
+                background-color: $veryLightGray;
+            }
+        }
+
+        .hero__tasks__task{
+            border-bottom-color: $lightGrayishBlue;
+        }
+
+        .info{
+            color: $darkGrayishBlue1;
+        }
+
+        .filter-btn{
+            color : $darkGrayishBlue1;
+
+            &:hover{
+                color: $veryDarkGrayishBlue;
+            }
+        }
+
+        .mob-bottom-section {
+            .filter-btn{
+                color : $darkGrayishBlue1;
+
+                &:hover{
+                    color: $veryDarkGrayishBlue;
+                }
+            }
+        }
+
+        .clear-completed{
+            color: $darkGrayishBlue1;
+
+            &:hover{
+                color: $veryDarkGrayishBlue;
+            }
+        }
+
+        .hero__suggestion, .attribution{
+            color: $darkGrayishBlue1;
+        }
+}

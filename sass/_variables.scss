@@ -1,0 +1,54 @@
+// contains the variables and mixin to be used throughout the website
+// conversion from pixel to rem
+@function rem($var) {
+    $result : $var / 16;
+    @return $result * 1rem
+};
+
+// responsiveness 
+$breakPoints : (
+    'extraSmall' : rem(320),
+    'small' : rem(375),
+    // 'large' : rem(768),
+    'large' : rem(581),
+    'tab' : rem(1024),
+);
+
+@mixin responsive($size) {
+    $breakPoint : map-get($breakPoints, $size);
+
+    @media screen and (max-width : $breakPoint){
+        @content
+    }
+}
+
+
+
+// colors
+$brightBlue : hsl(220, 98%, 61%);
+$checkBackground : linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+
+// colors for light Theme
+$veryLightGray :  hsl(0, 0%, 98%);
+$veryLightGrayishBlue : hsl(235, 32%, 92%);
+$lightGrayishBlue : hsl(233, 11%, 84%);
+$darkGrayishBlue1 :hsl(240, 9%, 61%);
+$veryDarkGrayishBlue  : hsl(235, 19%, 35%);
+
+
+// colors for dark theme
+$veryDarkBlue : hsl(235, 21%, 11%);
+$veryDarkDesaturatedBlue : hsl(235, 24%, 19%);
+$lightGrayishBlue2 : hsl(234, 39%, 85%);
+$lightGrayishBlueHover :hsl(235, 32%, 92%);
+$darkGrayishBlue2 : hsl(233, 11%, 52%);
+$veryDarkGrayishBlue1 : hsl(233, 14%, 35%);
+$veryDarkGrayishBlue2 : hsl(237, 14%, 26%);
+
+
+// font size
+$fontSize : rem(18);
+
+// font family
+$fontFamily : 'Josefin Sans', sans-serif; // 400 700

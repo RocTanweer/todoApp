@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body class="">
+    <main class="wrapper">
+        <header class="header"></header>
+
+        <section class="hero">
+            <!-- todo heading -->
+            <div class="hero__heading flex">
+                <h1 class="hero__heading__title" id="title">
+                    Todo
+                </h1>
+
+                <button class="hero__heading__toggler" id="theme-toggler"></button>
+            </div>
+
+            <!-- todo form -->
+            <form class="hero__form flex common-bg common-h8" id="form" action="">
+                <button tabindex="-1" class="hero__form__btn" type="submit">
+                    <span id="form-circle"></span>
+                </button>
+
+                <input class="hero__form__field" type="text" id="add-todo" placeholder="Create a new todo..."
+                    autocomplete="off">
+            </form>
+
+
+
+            <div class="hero__tasks">
+
+            </div>
+
+
+            <!-- todo filter-delete-info section for tab and pc -->
+            <div class="hero__bottomSection flex common-bg common-h8">
+                <div class="info">
+                </div>
+
+                <div class="filter">
+                    <button id="showAll" class="selected-filter showAll filter-btn">
+                        All
+                    </button>
+
+                    <button id="showActive" class="showActive filter-btn">
+                        Active
+                    </button>
+
+                    <button id="showCompleted" class=" showCompleted filter-btn">
+                        Completed
+                    </button>
+                </div>
+
+                <button class="clear-completed" id="clearCompleted">
+                    Clear Completed
+                </button>
+            </div>
+
+            <!-- todo filter-delete-info section for mobile-->
+            <div class="mob-bottom-section flex common-bg common-h8">
+
+                <div class="filter">
+                    <button id="showAll" class="selected-filter filter-btn showAll">
+                        All
+                    </button>
+
+                    <button id="showActive" class="filter-btn showActive">
+                        Active
+                    </button>
+
+                    <button id="showCompleted" class="filter-btn showCompleted">
+                        Completed
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <div class="hero__suggestion">
+            Drag and drop to reorder list
+        </div>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/RocTanweer" target="_blank">RocTanweer</a>.
+        </div>
+    </main>
+
+    <!-- Sortable.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js"
+        integrity="sha512-5x7t0fTAVo9dpfbp3WtE2N6bfipUwk7siViWncdDoSz2KwOqVC1N9fDxEOzk0vTThOua/mglfF8NO7uVDLRC8Q=="
+        crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
