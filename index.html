@@ -25,16 +25,16 @@
                     Todo
                 </h1>
 
-                <button class="hero__heading__toggler" id="theme-toggler"></button>
+                <button class="hero__heading__toggler" name="theme-toggler" id="theme-toggler"></button>
             </div>
 
             <!-- todo form -->
             <form class="hero__form flex common-bg common-h8" id="form">
-                <button tabindex="-1" class="hero__form__btn" type="submit">
+                <button tabindex="-1" name="form-btn" class="hero__form__btn" type="submit">
                     <span id="form-circle"></span>
                 </button>
 
-                <input class="hero__form__field" type="text" id="add-todo" placeholder="Create a new todo..."
+                <input class="hero__form__field" type="text" id="add-todo" name="form-input-field" placeholder="Create a new todo..."
                     autocomplete="off">
             </form>
 
@@ -51,20 +51,20 @@
                 </div>
 
                 <div class="filter">
-                    <button id="showAll" class="selected-filter showAll filter-btn">
+                    <button id="showAll" name="All" class="selected-filter showAll filter-btn">
                         All
                     </button>
 
-                    <button id="showActive" class="showActive filter-btn">
+                    <button id="showActive" name="active" class="showActive filter-btn">
                         Active
                     </button>
 
-                    <button id="showCompleted" class=" showCompleted filter-btn">
+                    <button id="showCompleted" name="completed" class=" showCompleted filter-btn">
                         Completed
                     </button>
                 </div>
 
-                <button class="clear-completed" id="clearCompleted">
+                <button class="clear-completed" name="clearCompleted" id="clearCompleted">
                     Clear Completed
                 </button>
             </div>
@@ -73,15 +73,15 @@
             <div class="mob-bottom-section flex common-bg common-h8">
 
                 <div class="filter">
-                    <button id="showAll" class="selected-filter filter-btn showAll">
+                    <button id="showAll" name="All" class="selected-filter filter-btn showAll">
                         All
                     </button>
 
-                    <button id="showActive" class="filter-btn showActive">
+                    <button id="showActive" name="active" class="filter-btn showActive">
                         Active
                     </button>
 
-                    <button id="showCompleted" class="filter-btn showCompleted">
+                    <button id="showCompleted" name="completed" class="filter-btn showCompleted">
                         Completed
                     </button>
                 </div>
