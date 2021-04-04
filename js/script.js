@@ -69,7 +69,7 @@ const addingTaskToList = function(task) {
                 </span>
             </label>
 
-            <button class="delete-btn delete"></button>
+            <button class="delete-btn delete" aria-label="deleteBtn"></button>
     `;
     heroTasks.appendChild(newTask)
 }
